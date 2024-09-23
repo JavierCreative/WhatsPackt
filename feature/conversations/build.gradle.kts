@@ -39,9 +39,8 @@ dependencies {
     implementation(libs.material)
     testImplementation(libs.junit)
     //Project module depencies
-    implementation(project(":feature:chat"))
-    implementation(project(":feature:create_chat"))
-    implementation(project(":feature:conversations"))
+    implementation(project(":common:domain"))
+    implementation(project(":common:framework"))
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
