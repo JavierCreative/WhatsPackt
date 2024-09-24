@@ -51,10 +51,12 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.compose.navigation)
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
     testImplementation(libs.junit)
     //Project module depencies
+    implementation(project(":common:framework"))
     implementation(project(":feature:chat"))
     implementation(project(":feature:create_chat"))
     implementation(project(":feature:conversations"))
